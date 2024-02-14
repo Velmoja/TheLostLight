@@ -75,7 +75,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void CheckGround() 
     {
-        float rayLenth = 0.3f;
+        float rayLenth = 0.5f;
         Vector3 rayStartPoth = objForIsGrounded.transform.position;
         RaycastHit2D hit = Physics2D.Raycast(rayStartPoth, rayStartPoth + Vector3.down, rayLenth);
         if (hit.collider != null)
